@@ -106,13 +106,11 @@ struct introView: View {
                 
                 HStack{
                     Text(name)
-                        //.font(.custom("jf-openhuninn-1.0",size:22))
                         .fontWeight(.heavy)
                         .foregroundColor(.secondary)
                         .multilineTextAlignment(.center)
                     
                     Text("  ( \(icon) )")
-                        //.font(.custom("jf-openhuninn-1.0",size:22))
                         .fontWeight(.heavy)
                         .foregroundColor(.secondary)
                         .multilineTextAlignment(.center)

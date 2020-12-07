@@ -111,7 +111,6 @@ struct PictureWallSection: View {
                                 .scaledToFill()
                                 .frame(width: 180)
                                 .clipped()
-                            //Text(books[index])
                             Divider()
                         }
                         .overlay(

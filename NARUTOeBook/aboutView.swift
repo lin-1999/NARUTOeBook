@@ -48,8 +48,6 @@ struct aboutView: View {
                 }.buttonStyle(PlainButtonStyle())
             }
         }
-        
-        
     }
 }
 
@@ -60,15 +58,12 @@ struct aboutView_Previews: PreviewProvider {
 }
 
 struct SafariView: UIViewControllerRepresentable {
+    typealias UIViewControllerType = SFSafariViewController
     let url: URL
-    
-    func makeUIViewController(context: UIViewControllerRepresentableContext<SafariView>) -> SFSafariViewController {
-        return SFSafariViewController(url: url)
+    func makeUIViewController(context: Context) -> SFSafariViewController {
+         SFSafariViewController(url: url)
     }
-    
-    func updateUIViewController(_ uiViewController: SFSafariViewController,
-                                context: UIViewControllerRepresentableContext<SafariView>) {
+    func updateUIViewController(_ uiViewController: SFSafariViewController, context: Context) {
         
     }
-    
 }
